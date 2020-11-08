@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<title>Category</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Little Closet template">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/category.css">
+<link rel="stylesheet" type="text/css" href="styles/category_responsive.css">
+</head>
+<body>
+
+<!-- Menu -->
+
+<div class="menu">
+
+	<!-- Navigation -->
+	<div class="menu_nav">
+		<ul>
+			<li><a th:href="@{/}">Home</a></li>
+			<li><a th:href="@{/products}">Products</a></li>
+			<li><a th:href="@{/product/add}">Add Product</a></li>
+			<li><a th:href="@{/cart}">Cart</a></li>
+			<li><a th:href="@{/logout}">Logout</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header">
+		<div class="header_overlay"></div>
+		<div class="header_content d-flex flex-row align-items-center justify-content-start">
+			<div class="logo">
+				<a href="#">
+					<div class="d-flex flex-row align-items-center justify-content-start">
+						<div><img th:src="@{/images/logo_1.png}" alt=""></div>
+						<div>Online Shop</div>
+					</div>
+				</a>
+			</div>
+			<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			<nav class="main_nav">
+				<ul class="d-flex flex-row align-items-start justify-content-start">
+					<li><a th:href="@{/}">Home</a></li>
+					<li><a th:href="@{/products}">Products</a></li>
+					<li><a th:href="@{/product/add}">Add Product</a></li>
+					<li><a th:href="@{/cart}">Cart</a></li>
+					<li><a th:href="@{/logout}">Logout</a></li>
+				</ul>
+			</nav>
+			<div class="header_right d-flex flex-row align-items-center justify-content-start ml-auto">
+				<!-- Cart -->
+				<div class="cart"><a th:href="@{/cart}"><div><img th:src="@{/images/cart.svg}" alt="https://www.flaticon.com/authors/freepik"></div></a></div>
+			</div>
+		</div>
+	</header>
+
+	<div class="super_container_inner">
+		<div class="super_overlay"></div>
+
+		<!-- Home -->
+
+		<div class="home">
+			<div class="home_container d-flex flex-column align-items-center justify-content-end">
+				<div class="home_content text-center">
+					<div class="home_title">Products</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Products -->
+
+		<div class="products">
+			<div class="container">
+				<div class="row products_bar_row">
+					<div class="col">
+						<div class="products_bar d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-start justify-content-center">
+							<div class="products_bar_side d-flex flex-row align-items-center justify-content-start ml-lg-auto">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row products_row products_container grid" id="contente">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- Product -->
+					<!--<div class="col-xl-4 col-md-6 grid-item sale" th:each="product : ${products}">
+						<div class="product">
+
+							<div class="product_content">
+								<div class="product_info d-flex flex-row align-items-start justify-content-start">
+									<div>
+										<div>
+											<div class="product_name"><a href="product.html" th:text="${product.productName}">productName</a></div>
+											<div class="product_category">In <a href="products.html" th:text="${product.manufacturer}">manufacturer</a></div>
+										</div>
+									</div>
+									<div class="ml-auto text-right">
+										<div class="rating_r rating_r_4 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div>
+										<div class="product_price text-right" th:text="${product.price}">price</div>
+									</div>
+								</div>
+								<div class="product_buttons">
+									<div class="text-right d-flex flex-row align-items-start justify-content-start">
+										<div class="product_button product_fav text-center d-flex flex-column align-items-center justify-content-center">
+											<div><div><img src="images/heart_2.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center">
+											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>-->
+
+			</div>
+		</div>
+
+		<!-- Footer -->
+
+		<footer class="footer">
+			<div class="footer_bar">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="footer_bar_content d-flex flex-md-row flex-column align-items-center justify-content-start">
+								<div class="copyright order-md-1 order-2"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script></a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+								<nav class="footer_nav ml-md-auto order-md-2 order-1">
+									<ul class="d-flex flex-row align-items-center justify-content-start">
+										<li><a th:href="@{/}">Home</a></li>
+										<li><a th:href="@{/products}">Products</a></li>
+										<li><a th:href="@{/product/add}">Add Product</a></li>
+										<li><a th:href="@{/cart}">Cart</a></li>
+										<li><a th:href="@{/logout}">Logout</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+		
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap-4.1.2/popper.js"></script>
+<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+<script src="plugins/Isotope/fitcolumns.js"></script>
+<script src="js/category.js"></script>
+<script type="text/javascript" th:inline="text">
+	$(document).ready(
+			function () {
+				$.ajax({
+					url: '/product-service/products',
+					success: function (data) {
+						$.each(data._embedded.products, function(i, item) {
+							console.log(item);
+							var content="<div class=\"col-xl-4 col-md-6 grid-item sale\" >\n" +
+									"\t\t\t\t\t\t<div class=\"product\">\n" +
+									"\n" +
+									"\t\t\t\t\t\t\t<div class=\"product_content\">\n" +
+									"\t\t\t\t\t\t\t\t<div class=\"product_info d-flex flex-row align-items-start justify-content-start\">\n" +
+									"\t\t\t\t\t\t\t\t\t<div>\n" +
+									"\t\t\t\t\t\t\t\t\t\t<div>\n" +
+									"\t\t\t\t\t\t\t\t\t\t\t<div class=\"product_name\"><a href=\"product.html\" >"+item.productName+"</a></div>\n" +
+									"\t\t\t\t\t\t\t\t\t\t\t<div class=\"product_category\">In <a href=\"products.html\" >"+item.manufacturer+"</a></div>\n" +
+									"\t\t\t\t\t\t\t\t\t\t</div>\n" +
+									"\t\t\t\t\t\t\t\t\t</div>\n" +
+									"\t\t\t\t\t\t\t\t\t<div class=\"ml-auto text-right\">\n" +
+									"\t\t\t\t\t\t\t\t\t\t<div class=\"rating_r rating_r_4 home_item_rating\"><i></i><i></i><i></i><i></i><i></i></div>\n" +
+									"\t\t\t\t\t\t\t\t\t\t<div class=\"product_price text-right\">"+item.price+"</div>\n" +
+									"\t\t\t\t\t\t\t\t\t</div>\n" +
+									"\t\t\t\t\t\t\t\t</div>\n" +
+									"\t\t\t\t\t\t\t\t<div class=\"product_buttons\">\n" +
+									"\t\t\t\t\t\t\t\t\t<div class=\"text-right d-flex flex-row align-items-start justify-content-start\">\n" +
+									"\t\t\t\t\t\t\t\t\t\t<div class=\"product_button product_fav text-center d-flex flex-column align-items-center justify-content-center\">\n" +
+									"\t\t\t\t\t\t\t\t\t\t\t<div><div><img src=\"images/heart_2.svg\" class=\"svg\" alt=\"\"><div>+</div></div></div>\n" +
+									"\t\t\t\t\t\t\t\t\t\t</div>\n" +
+									"\t\t\t\t\t\t\t\t\t\t<div class=\"product_button product_cart text-center d-flex flex-column align-items-center justify-content-center\">\n" +
+									"\t\t\t\t\t\t\t\t\t\t\t<div><div><img src=\"images/cart.svg\" class=\"svg\" alt=\"\"><div>+</div></div></div>\n" +
+									"\t\t\t\t\t\t\t\t\t\t</div>\n" +
+									"\t\t\t\t\t\t\t\t\t</div>\n" +
+									"\t\t\t\t\t\t\t\t</div>\n" +
+									"\t\t\t\t\t\t\t</div>\n" +
+									"\t\t\t\t\t\t</div>\n" +
+									"\t\t\t\t\t</div>";
+
+							$('#contente').prepend(content);
+					})
+					}.bind(this),
+					statusCode: {
+						404: function () {
+							window.location.href = "/error404";
+						}
+					}
+				})
+				function addproduct() {
+					var formData = $("#addForm").serializeArray();
+					function objectifyForm(formArray) {//serialize data function
+
+						var returnArray = {};
+						for (var i = 0; i < formArray.length; i++){
+							returnArray[formArray[i]['name']] = formArray[i]['value'];
+						}
+						return returnArray;
+					}
+					var data = objectifyForm(formData);
+					console.log(data);
+					$.ajax({
+						type: "POST",
+						url: "/product-service/products",
+						data: data,
+						success: function () {
+						},
+						dataType: "json",
+						contentType: "application/json"
+					});
+				}
+			});
+
+</script>
+</body>
+</html>
